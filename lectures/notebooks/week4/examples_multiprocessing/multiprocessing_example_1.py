@@ -11,7 +11,7 @@ def monte_carlo_pi_part(n):
     return count
 
 if __name__ == '__main__':
-    cores = 1
+    cores = 4
     print('You have %d CPUs, and you use %d cores for the calculation'%(cpu_count(), cores))
     n = 10000000
     part_count=[n/cores for i in range(cores)] # not accurate, can you improve it?

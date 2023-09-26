@@ -1,0 +1,2 @@
+- 1 make demo
+- 2 python test_run.py

@@ -1,5 +1,5 @@
 import numpy as np
-from multiprocessing import Pool
+from multiprocessing import Pool, cpu_count
 
 def simpson_tmp_arr(data_pairs):
     y = data_pairs[0]
@@ -19,6 +19,7 @@ if __name__ == '__main__':
     y_arr = np.sin(x_arr)
 
     cores = 4
+    print('You have %d CPUs, and you use %d cores for the calculation'%(cpu_count(), cores))
 
     y_parts = np.array_split(y_arr, cores)
     x_parts = np.array_split(x_arr, cores)

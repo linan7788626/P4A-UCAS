@@ -1,26 +1,40 @@
-from setuptools import setup
+from setuptools import setup, Extension
+import Cython
 from Cython.Build import cythonize
 
+
+# setup(
+    # name='example_cython',
+    # ext_modules = cythonize("example_cython.pyx")
+# )
+
+extensions = [
+    Extension("example_cython",
+              sources=["example_cython.pyx"],
+              include_dirs=["./"],
+              libraries=["m"],
+              library_dirs=["./"]),
+]
 setup(
-    ext_modules = cythonize("example_cython.pyx")
+    name='example_cython',
+    ext_modules=cythonize(extensions),
 )
 
-#####
 # Cython.Build.cythonize(module_list, exclude=None, nthreads=0, aliases=None, quiet=False, force=None, language=None, exclude_failures=False, show_all_warnings=False, **options)
 # extensions = [
-#     Extension("primes", ["primes.pyx"],
-#         include_dirs=[...],
-#         libraries=[...],
-#         library_dirs=[...]),
-#     # Everything but primes.pyx is included here.
-#     Extension("*", ["*.pyx"],
-#         include_dirs=[...],
-#         libraries=[...],
-#         library_dirs=[...]),
+    # Extension("primes", ["primes.pyx"],
+        # include_dirs=[...],
+        # libraries=[...],
+        # library_dirs=[...]),
+    # # Everything but primes.pyx is included here.
+    # Extension("*", ["*.pyx"],
+        # include_dirs=[...],
+        # libraries=[...],
+        # library_dirs=[...]),
 # ]
 # setup(
-#     name="My hello app",
-#     ext_modules=cythonize(extensions),
+    # name="My hello app",
+    # ext_modules=cythonize(extensions),
 # )
 
 #####

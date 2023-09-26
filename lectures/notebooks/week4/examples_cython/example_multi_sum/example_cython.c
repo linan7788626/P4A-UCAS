@@ -1810,14 +1810,14 @@ static const char __pyx_k__3[] = "?";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_test[] = "__test__";
-static const char __pyx_k_mult_sum[] = "mult_sum";
+static const char __pyx_k_multi_sum[] = "multi_sum";
 static const char __pyx_k_is_coroutine[] = "_is_coroutine";
 static const char __pyx_k_example_cython[] = "example_cython";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_example_cython_pyx[] = "example_cython.pyx";
 /* #### Code section: decls ### */
-static PyObject *__pyx_pf_14example_cython_mult_sum(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_a); /* proto */
+static PyObject *__pyx_pf_14example_cython_multi_sum(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_a); /* proto */
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
 typedef struct {
@@ -1855,7 +1855,7 @@ typedef struct {
   PyObject *__pyx_kp_s_example_cython_pyx;
   PyObject *__pyx_n_s_is_coroutine;
   PyObject *__pyx_n_s_main;
-  PyObject *__pyx_n_s_mult_sum;
+  PyObject *__pyx_n_s_multi_sum;
   PyObject *__pyx_n_s_name;
   PyObject *__pyx_n_s_test;
   PyObject *__pyx_tuple_;
@@ -1910,7 +1910,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_kp_s_example_cython_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_is_coroutine);
   Py_CLEAR(clear_module_state->__pyx_n_s_main);
-  Py_CLEAR(clear_module_state->__pyx_n_s_mult_sum);
+  Py_CLEAR(clear_module_state->__pyx_n_s_multi_sum);
   Py_CLEAR(clear_module_state->__pyx_n_s_name);
   Py_CLEAR(clear_module_state->__pyx_n_s_test);
   Py_CLEAR(clear_module_state->__pyx_tuple_);
@@ -1943,7 +1943,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_kp_s_example_cython_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_is_coroutine);
   Py_VISIT(traverse_module_state->__pyx_n_s_main);
-  Py_VISIT(traverse_module_state->__pyx_n_s_mult_sum);
+  Py_VISIT(traverse_module_state->__pyx_n_s_multi_sum);
   Py_VISIT(traverse_module_state->__pyx_n_s_name);
   Py_VISIT(traverse_module_state->__pyx_n_s_test);
   Py_VISIT(traverse_module_state->__pyx_tuple_);
@@ -1986,30 +1986,30 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_kp_s_example_cython_pyx __pyx_mstate_global->__pyx_kp_s_example_cython_pyx
 #define __pyx_n_s_is_coroutine __pyx_mstate_global->__pyx_n_s_is_coroutine
 #define __pyx_n_s_main __pyx_mstate_global->__pyx_n_s_main
-#define __pyx_n_s_mult_sum __pyx_mstate_global->__pyx_n_s_mult_sum
+#define __pyx_n_s_multi_sum __pyx_mstate_global->__pyx_n_s_multi_sum
 #define __pyx_n_s_name __pyx_mstate_global->__pyx_n_s_name
 #define __pyx_n_s_test __pyx_mstate_global->__pyx_n_s_test
 #define __pyx_tuple_ __pyx_mstate_global->__pyx_tuple_
 #define __pyx_codeobj__2 __pyx_mstate_global->__pyx_codeobj__2
 /* #### Code section: module_code ### */
 
-/* "example_cython.pyx":5
+/* "example_cython.pyx":4
+ *     int multi_sum_c(int)
  * 
- * 
- * def mult_sum(int a):             # <<<<<<<<<<<<<<
- *     return mult_sum_c(a)
+ * def multi_sum(int a):             # <<<<<<<<<<<<<<
+ *     return multi_sum_c(a)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_14example_cython_1mult_sum(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_14example_cython_1multi_sum(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_14example_cython_1mult_sum = {"mult_sum", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_14example_cython_1mult_sum, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_14example_cython_1mult_sum(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_14example_cython_1multi_sum = {"multi_sum", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_14example_cython_1multi_sum, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_14example_cython_1multi_sum(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -2026,7 +2026,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("mult_sum (wrapper)", 0);
+  __Pyx_RefNannySetupContext("multi_sum (wrapper)", 0);
   {
     PyObject **__pyx_pyargnames[] = {&__pyx_n_s_a,0};
     PyObject* values[1] = {0};
@@ -2042,67 +2042,67 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       switch (__pyx_nargs) {
         case  0:
         if (likely((values[0] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_a)) != 0)) kw_args--;
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 5, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 4, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "mult_sum") < 0)) __PYX_ERR(0, 5, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "multi_sum") < 0)) __PYX_ERR(0, 4, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
     }
-    __pyx_v_a = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_a == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 5, __pyx_L3_error)
+    __pyx_v_a = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_a == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 4, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("mult_sum", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 5, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("multi_sum", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 4, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("example_cython.mult_sum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("example_cython.multi_sum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_14example_cython_mult_sum(__pyx_self, __pyx_v_a);
+  __pyx_r = __pyx_pf_14example_cython_multi_sum(__pyx_self, __pyx_v_a);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_14example_cython_mult_sum(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_a) {
+static PyObject *__pyx_pf_14example_cython_multi_sum(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_a) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("mult_sum", 0);
+  __Pyx_RefNannySetupContext("multi_sum", 0);
 
-  /* "example_cython.pyx":6
+  /* "example_cython.pyx":5
  * 
- * def mult_sum(int a):
- *     return mult_sum_c(a)             # <<<<<<<<<<<<<<
+ * def multi_sum(int a):
+ *     return multi_sum_c(a)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(mult_sum_c(__pyx_v_a)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(multi_sum_c(__pyx_v_a)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "example_cython.pyx":5
+  /* "example_cython.pyx":4
+ *     int multi_sum_c(int)
  * 
- * 
- * def mult_sum(int a):             # <<<<<<<<<<<<<<
- *     return mult_sum_c(a)
+ * def multi_sum(int a):             # <<<<<<<<<<<<<<
+ *     return multi_sum_c(a)
  */
 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("example_cython.mult_sum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("example_cython.multi_sum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2134,7 +2134,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_kp_s_example_cython_pyx, __pyx_k_example_cython_pyx, sizeof(__pyx_k_example_cython_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_is_coroutine, __pyx_k_is_coroutine, sizeof(__pyx_k_is_coroutine), 0, 0, 1, 1},
     {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
-    {&__pyx_n_s_mult_sum, __pyx_k_mult_sum, sizeof(__pyx_k_mult_sum), 0, 0, 1, 1},
+    {&__pyx_n_s_multi_sum, __pyx_k_multi_sum, sizeof(__pyx_k_multi_sum), 0, 0, 1, 1},
     {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
     {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
     {0, 0, 0, 0, 0, 0, 0}
@@ -2151,16 +2151,16 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "example_cython.pyx":5
+  /* "example_cython.pyx":4
+ *     int multi_sum_c(int)
  * 
- * 
- * def mult_sum(int a):             # <<<<<<<<<<<<<<
- *     return mult_sum_c(a)
+ * def multi_sum(int a):             # <<<<<<<<<<<<<<
+ *     return multi_sum_c(a)
  */
-  __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_a); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_a); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_example_cython_pyx, __pyx_n_s_mult_sum, 5, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_example_cython_pyx, __pyx_n_s_multi_sum, 4, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -2526,20 +2526,20 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "example_cython.pyx":5
+  /* "example_cython.pyx":4
+ *     int multi_sum_c(int)
  * 
- * 
- * def mult_sum(int a):             # <<<<<<<<<<<<<<
- *     return mult_sum_c(a)
+ * def multi_sum(int a):             # <<<<<<<<<<<<<<
+ *     return multi_sum_c(a)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_14example_cython_1mult_sum, 0, __pyx_n_s_mult_sum, NULL, __pyx_n_s_example_cython, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_14example_cython_1multi_sum, 0, __pyx_n_s_multi_sum, NULL, __pyx_n_s_example_cython, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mult_sum, __pyx_t_2) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_multi_sum, __pyx_t_2) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "example_cython.pyx":1
  * cdef extern from "example.h":             # <<<<<<<<<<<<<<
- *     int mult_sum_c(int)
+ *     int multi_sum_c(int)
  * 
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
